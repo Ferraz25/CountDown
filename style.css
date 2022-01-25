@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --black: #4d4c59;
+  --purple: #6c63ff;
+  --light-grey: #c8c8c8;
+  --text-color: #9c9ab6;
+}
+
+.timer {
+  width: 494px;
+  height: 172px;
+  margin-top: 80px;
+  margin-left: 127px;
+}
+
+.timer h5 {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--purple);
+  letter-spacing: 4px;
+}
+
+.group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.group p {
+  color: var(--light-grey);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.date {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 28px;
+}
+
+.date p {
+  color: var(--black);
+  font-size: 72px;
+  font-weight: 400;
+}
+
+#subscribe {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+button {
+  width: 160px;
+  height: 46px;
+  margin-top: 30px;
+  margin-left: 170px;
+
+  background-color: var(--purple);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.modal-container {
+  background-color: var(--light-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+
+  opacity: 0;
+  pointer-events: none;
+
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+}
+
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 30px 50px;
+  width: 600px;
+  max-width: 100%;
+}
+
+.modal h3 {
+  font-size: 30px;
+  color: var(--purple);
+  text-align: center;
+}
+
+.modal label,
+.modal input,
+.modal legend {
+  margin-left: 50px;
+  font-size: 16px;
+  color: var(--black);
+}
+
+.modal input {
+  height: 40px;
+  width: 400px;
+  outline: none;
+}
+
+.modal button {
+  margin-bottom: 50px;
+}
+
+.right {
+  margin-top: -230px;
+  margin-left: 730px;
+}
